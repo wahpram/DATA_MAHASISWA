@@ -14,7 +14,7 @@ if ($conn ->connect_error) {
 function query($query){
     global $conn;
 
-    $sql = mysqli_query($conn, $query);
+    $sql = mysqli_query($conn, "SELECT * FROM mahasiswa");
     
     $result = array();
 
